@@ -25,8 +25,13 @@
 
 #ifdef CONFIG_USB_SERIAL_GENERIC
 
-static __u16 vendor  = 0x05f9;
-static __u16 product = 0xffff;
+// static __u16 vendor  = 0x05f9;
+// static __u16 product = 0xffff;
+
+// + add for ficom NL688 4G modem module
+static __u16 vendor  = 0x1508;
+static __u16 product = 0x1001;
+// + add end.
 
 module_param(vendor, ushort, 0);
 MODULE_PARM_DESC(vendor, "User specified USB idVendor");
